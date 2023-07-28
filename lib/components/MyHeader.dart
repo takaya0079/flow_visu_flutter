@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
 
 class MyHeader extends StatelessWidget implements PreferredSizeWidget {
-  final String title;
-
-  MyHeader({required this.title});
+  const MyHeader({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Center(
+      title: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              title,
-              style: const TextStyle(color: Colors.white),
+              "Flow Visu",
+              style: TextStyle(color: Colors.white),
             )
           ],
         ),
