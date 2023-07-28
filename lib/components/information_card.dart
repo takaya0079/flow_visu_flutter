@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class TitleTextDisplay extends StatelessWidget {
+class InformationCard extends StatelessWidget {
   final String title;
   final String text;
 
-  const TitleTextDisplay({Key? key, required this.title, required this.text}) : super(key: key);
+  const InformationCard({Key? key, required this.title, required this.text}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16.0),
+      width: 300,
+      padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         border: Border.all(color: Colors.blueAccent),
         borderRadius: BorderRadius.circular(5.0),
@@ -19,16 +20,17 @@ class TitleTextDisplay extends StatelessWidget {
         children: <Widget>[
           Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 10,
+              fontSize: 15,
             ),
           ),
-          SizedBox(height: 16), // add some space between title and text
+          const SizedBox(height: 16), // add some space between title and text
           Text(
-            text,
-            style: TextStyle(
-              fontSize: 15,
+            "　" + text,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
             ),
           ),
         ],
