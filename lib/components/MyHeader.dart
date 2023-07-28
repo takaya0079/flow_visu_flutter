@@ -6,6 +6,7 @@ class MyHeader extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: false,
       title: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
