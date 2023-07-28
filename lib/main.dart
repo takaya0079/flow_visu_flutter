@@ -1,7 +1,7 @@
 import 'package:flow_visu_flutter/pages/ReadSensorPage.dart';
 
 import './pages/TopPage.dart';
-import './pages/co.dart';
+import 'pages/booth_finish_page.dart';
 import 'pages/BoothStartPage.dart';
 import './pages/NamePage.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => const TopPage(),
           '/sensor': (context) => const ReadSensorPage(),
           '/boothStart': (context) => const BoothStartPage(),
-          '/boothFinish': (context) => const comfirmation(),
+          '/boothFinish': (context) => const BoothFinishPage(),
           '/name': (context) => const NamePage(),
         }
 
