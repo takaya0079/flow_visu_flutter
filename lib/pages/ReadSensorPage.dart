@@ -42,7 +42,7 @@ class _ReadSensorPageState extends State<ReadSensorPage> {
 
                   MyFilledButton(
                     onTap: () {
-                      Navigator.pushNamed(context, '/start');
+                      Navigator.pushNamed(context, '/boothStart');
                     },
                     displayText: 'タグの読み取り'
                   ),

@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => const TopPage(),
           '/sensor': (context) => const ReadSensorPage(),
-          '/start': (context) => const StartPage(),
+          '/boothStart': (context) => const StartPage(),
           '/confirm': (context) => const comfirmation(),
           '/name': (context) => const NamePage(),
         }
