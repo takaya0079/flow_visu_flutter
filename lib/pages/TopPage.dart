@@ -25,7 +25,7 @@ class TopPage extends StatelessWidget {
 
             MyOutlinedButton(
               onTap: () {
-                Navigator.pushNamed(context, '/name');
+                Navigator.pushNamed(context, '/userSetting');
               },
               displayText: 'ユーザー設定',
             ),
