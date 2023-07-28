@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../components/PrimaryButton.dart';
+import '../components/MyFilledButton.dart';
 import '../components/MyOutlinedButton.dart';
-import '../components/header.dart'; 
-
+import '../components/MyHeader.dart';
 
 class TopPage extends StatelessWidget {
   const TopPage({Key? key}) : super(key: key);
@@ -11,27 +10,33 @@ class TopPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: 'Flow Visu'),
+      appBar: const MyHeader(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            PrimaryButton(
+            MyFilledButton(
               onTap: () {
-                Navigator.pushNamed(context,'/sensor');
+                Navigator.pushNamed(context, '/sensor');
               },
-              displayText: 'Start'
+              displayText: '開始する'
             ),
+            const SizedBox(height: 30),
+
             MyOutlinedButton(
-              onTap: () { 
-                Navigator.pushNamed(context,'/name');
+              onTap: () {
+                Navigator.pushNamed(context, '/name');
               },
-              displayText: 'Set',
+              displayText: 'ユーザー設定',
             ),
-            TextButton(
-              onPressed: () {},
-              child: const Text('Divis'),
+            const SizedBox(height: 30),
+
+            MyOutlinedButton(
+              onTap: () { },
+              displayText: 'デバイス設定',
             ),
+            const SizedBox(height: 30),
+            
           ]
         )
       ),
