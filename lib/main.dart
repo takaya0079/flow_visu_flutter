@@ -1,4 +1,4 @@
-import 'package:flow_visu_flutter/pages/SensorPage.dart';
+import 'package:flow_visu_flutter/pages/ReadSensorPage.dart';
 
 import './pages/TopPage.dart';
 import './pages/co.dart';
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const TopPage(),
-          '/sensor': (context) => const SensorPage(),
+          '/sensor': (context) => const ReadSensorPage(),
           '/start': (context) => const StartPage(),
           '/confirm': (context) => const comfirmation(),
           '/name': (context) => const NamePage(),
