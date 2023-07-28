@@ -15,10 +15,16 @@ class MyOutlinedButton extends StatelessWidget {
     return OutlinedButton(
       onPressed: onTap,
       style: OutlinedButton.styleFrom(
-        foregroundColor: const Color(0xFF005DB9),
-        fixedSize: const Size(200, 50),
+        backgroundColor: const Color(0xFFD6E3FF),
+        fixedSize: const Size(300, 50),
+        side: const BorderSide(
+          color: Color(0xFF005DB9)
+        )
       ),
-      child: Text(displayText),
+      child: Text(
+        displayText,
+        style: const TextStyle(color: Colors.black),
+      ),
     );
   }
 }
