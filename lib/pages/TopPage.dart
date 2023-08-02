@@ -36,6 +36,12 @@ class TopPage extends StatelessWidget {
               displayText: 'デバイス設定',
             ),
             const SizedBox(height: 30),
+
+            MyOutlinedButton(
+              onTap: () { Navigator.pushNamed(context, '/nfc'); },
+              displayText: 'NFC',
+            ),
+            const SizedBox(height: 30),
             
           ]
         )

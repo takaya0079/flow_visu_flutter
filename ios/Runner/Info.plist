@@ -47,6 +47,8 @@
 	<true/>
 	<key>NFCReaderUsageDescription</key>
 	<string>For interacting with NFC tags</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 </dict>

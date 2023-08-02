@@ -16,9 +16,9 @@ class BoothStartPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const InformationCard(title: 'ブース', text: 'サーバーから読み取り'),
+            const InformationCard(title: 'ブース', text: 'Booth 3-1'),
             const SizedBox(height: 10),
-            const InformationCard(title: 'タグID', text: 'サーバーから読み取り'),
+            const InformationCard(title: 'タグID', text: 'strawberry'),
             const SizedBox(height: 30),
 
             MyFilledButton(

@@ -1,4 +1,5 @@
 import 'package:flow_visu_flutter/pages/ReadSensorPage.dart';
+import 'package:flow_visu_flutter/pages/nfc_read_page.dart';
 
 import './pages/TopPage.dart';
 import 'pages/booth_finish_page.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
           '/boothStart': (context) => const BoothStartPage(),
           '/boothFinish': (context) => const BoothFinishPage(),
           '/userSetting': (context) => const UserSettingPage(),
+          '/nfc': (context) => const NfcReadPage(),
         }
 
         // home: const TopPage(),
